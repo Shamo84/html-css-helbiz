@@ -4,7 +4,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 10px;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .container_1100 {
@@ -105,7 +105,7 @@ main .container .helbizgo-bike {
   text-align: center;
 }
 
-main .container .helbizgo-bike h2 {
+main .container .helbizgo-bike h3 {
   font-size: 2.1em;
   font-weight: 400;
   margin-top: 25px;
@@ -124,6 +124,42 @@ main .container .helbizgo-bike a::after {
 
 main .container .helbizgo-bike img{
   width: 50%;
+}
+
+.how {
+height: 800px;
+}
+.how.background {
+  background-image: url(https://www.helbiz.com/asset/pages/newhome/images/HelbizBanner.jpg);
+  background-size: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.how .container .col-lg-4 {
+  height: 600px;
+}
+
+.how .container h2 {
+  font-size: 3.6em;
+  margin-top: 130%;
+}
+.how .container .col-lg-4.smartphone {
+  text-align: center;
+}
+.how .container img {
+  margin-top: 200px;
+  width: 80%;
+}
+.how .container h4 {
+  margin: 130% 50px 0;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.how .container p {
+  font-size: 1.6em;
+  margin-left: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
