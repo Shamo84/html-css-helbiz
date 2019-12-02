@@ -1,10 +1,6 @@
-html {
-  font-size: 10px;
-}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 10px;
-  /* background-color: red; */
 }
 
 .container_1100 {
@@ -43,7 +39,7 @@ header {
 }
 .header_menu li{
   text-align: right;
-  margin-right: 30px;
+  margin-right: 4%;
 }
 .header_menu_lang {
   display: inline;
@@ -93,36 +89,36 @@ header {
   margin-bottom: 1.5rem;
 }
 
-main .container #helbizgo-bike .background-color {
+.container.helbizgo {
+  margin: 80px 0;
+}
+#helbizgo-bike .background-color {
   width: 95%;
-  margin: 80px 20px;
+  margin: 0 20px;
   padding: 80px;
   background-color: #FAFAFA;
 }
-main .container .helbizgo-bike {
+.helbizgo-bike {
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
-
-main .container .helbizgo-bike h3 {
+.helbizgo-bike h3 {
   font-size: 2.1em;
   font-weight: 400;
   margin-top: 25px;
 }
-main .container .helbizgo-bike a {
+.helbizgo-bike a {
   display: block;
-  width: 40%;
+  width: 50%;
   margin: 15px auto 30px;
   font-size: 2em;
   text-decoration: none;
 }
-
-main .container .helbizgo-bike a::after {
+.helbizgo-bike a::after {
   content: " ›";
 }
-
-main .container .helbizgo-bike img{
+.helbizgo-bike img{
   width: 50%;
 }
 
@@ -131,8 +127,8 @@ height: 800px;
 }
 .how.background {
   background-image: url(https://www.helbiz.com/asset/pages/newhome/images/HelbizBanner.jpg);
-  background-size: 100%;
-  background-position: left top;
+  background-size: auto 600px;
+  background-position: 25% 0;
   background-repeat: no-repeat;
   height: 600px;
 }
@@ -142,17 +138,17 @@ height: 800px;
 
 .how .container h2 {
   font-size: 3.6em;
-  margin-top: 130%;
+  margin-top: 660px;
 }
 .how .container .col-lg-4.smartphone {
   text-align: center;
 }
 .how .container img {
   margin-top: 200px;
-  width: 80%;
+  width: 376px;
 }
 .how .container h4 {
-  margin: 130% 50px 0;
+  margin: 660px 50px 15px;
   font-size: 1.8em;
   font-weight: 600;
 }
@@ -174,12 +170,21 @@ height: 800px;
     display: none;
   }
   .jumbo_text a {
-    width: calc(100% / 4);
     display: inline-block;
+    width: calc(100% / 4);
+    max-width: 164px;
   }
   .jumbo_text a img {
     width: 100%;
   }
+
+  .helbizgo-bike a {
+    width: 80%;
+  }
+  .helbizgo-bike img {
+    min-width: 120px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -204,10 +209,14 @@ height: 800px;
     margin-bottom: 0.8rem;
   }
   .jumbo_text a {
-    width: calc(100% / 5);
     display: inline-block;
+    width: calc(100% / 4);
+    min-width: 130px;
+    max-width: 164px;
+
   }
   .jumbo_text a img {
     width: 100%;
   }
+
 }
