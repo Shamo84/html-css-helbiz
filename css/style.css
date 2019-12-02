@@ -3,8 +3,8 @@ body {
   font-size: 10px;
 }
 
-.container_1100 {
-  max-width: 1100px;
+.container_1200 {
+  max-width: 1200px;
   margin: 0 auto;
 }
 .menu_inline {
@@ -12,8 +12,8 @@ body {
 }
 .menu_inline li {
   display: inline;
-  margin-right: 20px;
   text-transform: uppercase;
+  float: right;
 }
 .menu_inline li a {
   text-decoration: none;
@@ -34,20 +34,28 @@ header {
   line-height: 80px;
   background-color: white;
 }
+.header-top .container_1200 > .container {
+  padding: 0 30px;
+}
 .header_logo {
   vertical-align: middle;
 }
-.header_menu li{
-  text-align: right;
-  margin-right: 4%;
+.header_menu li:not(:first-child){
+  margin-right: 40px;
 }
 .header_menu_lang {
   display: inline;
+}
+.header_menu_lang li {
+  float: none;
 }
 .header_menu_lang li:not(:last-child) {
   border-right: 1px solid black;
   padding-right: 10px;
   margin-right: 8px;
+}
+.header_menu_lang li:last-child {
+  margin-right: 0;
 }
 .ico_hamburger {
   float: right;
@@ -90,12 +98,12 @@ header {
 }
 
 .container.helbizgo {
-  margin: 80px 0;
+  margin: 80px auto;
 }
 #helbizgo-bike .background-color {
   width: 95%;
   margin: 0 20px;
-  padding: 80px;
+  padding: 11%;
   background-color: #FAFAFA;
 }
 .helbizgo-bike {
@@ -119,7 +127,8 @@ header {
   content: " ›";
 }
 .helbizgo-bike img{
-  width: 50%;
+  width: 200px;
+  max-width: 100%
 }
 
 .how {
@@ -130,17 +139,17 @@ height: 800px;
   background-size: auto 600px;
   background-position: 25% 0;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 800px;
 }
-.how .container .col-lg-4 {
-  height: 600px;
+.how .container [class*="col-"] {
+  height: 800px;
 }
 
 .how .container h2 {
   font-size: 3.6em;
   margin-top: 660px;
 }
-.how .container .col-lg-4.smartphone {
+.how .container .smartphone {
   text-align: center;
 }
 .how .container img {
@@ -156,6 +165,18 @@ height: 800px;
 .how .container p {
   font-size: 1.6em;
   margin-left: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .how .container h2,
+  .how .container h4,
+  .how .container p {
+    margin: 15px 0 0;
+  }
+  .how .container [class*="col-"] {
+    height: auto;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -177,14 +198,9 @@ height: 800px;
   .jumbo_text a img {
     width: 100%;
   }
-
   .helbizgo-bike a {
     width: 80%;
   }
-  .helbizgo-bike img {
-    min-width: 120px;
-  }
-
 }
 
 @media screen and (max-width: 768px) {

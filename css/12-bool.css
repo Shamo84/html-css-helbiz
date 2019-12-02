@@ -81,6 +81,10 @@
 .col-lg-12 {
   width: 100%;
 }
+.lg-display-none {
+  display: none;
+}
+
 /* mediaquery colonne */
 @media screen and (max-width: 768px) {
   .col-xs-1 {
@@ -122,6 +126,10 @@
   .xs-display-none {
     display: none;
   }
+  .xs-display {
+    display: inline-block;
+  }
+
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -161,6 +169,13 @@
   .col-md-12 {
     width: 100%;
   }
+  .md-display-none {
+    display: none;
+  }
+  .md-display {
+    display: inline-block;
+  }
+
 }
 
 /* Offset */
