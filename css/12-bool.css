@@ -84,6 +84,9 @@
 .lg-display-none {
   display: none;
 }
+.lg-display-block {
+  display: block;
+}
 
 /* mediaquery colonne */
 @media screen and (max-width: 768px) {
@@ -172,8 +175,8 @@
   .md-display-none {
     display: none;
   }
-  .md-display {
-    display: inline-block;
+  .md-display-block {
+    display: block;
   }
 
 }

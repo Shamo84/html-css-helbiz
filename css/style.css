@@ -64,12 +64,6 @@ header {
   vertical-align: middle;
 }
 
-.lg_display_none {
-  display: none;
-}
-.lg_display_block {
-  display: block;
-}
 
 .jumbo {
   position: relative;
@@ -97,13 +91,14 @@ header {
   margin-bottom: 1.5rem;
 }
 
+
 .container.helbizgo {
   margin: 80px auto;
 }
 #helbizgo-bike .background-color {
   width: 95%;
   margin: 0 20px;
-  padding: 11%;
+  padding: 11% 15%;
   background-color: #FAFAFA;
 }
 .helbizgo-bike {
@@ -123,6 +118,11 @@ header {
   font-size: 2em;
   text-decoration: none;
 }
+.helbizgo-bike span:hover,
+.helbizgo-bike span:active,
+.helbizgo-bike span:focus {
+  text-decoration: underline;
+}
 .helbizgo-bike a::after {
   content: " ›";
 }
@@ -136,10 +136,10 @@ height: 800px;
 }
 .how.background {
   background-image: url(https://www.helbiz.com/asset/pages/newhome/images/HelbizBanner.jpg);
-  background-size: auto 600px;
+  background-size: cover;
   background-position: 25% 0;
   background-repeat: no-repeat;
-  height: 800px;
+  height: 600px;
 }
 .how .container [class*="col-"] {
   height: 800px;
